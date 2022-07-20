@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (4)" project="Cucuber2nd_Project" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.testrunner.TestRunner" time="17.228">
+    <testsuite name="Feature: To validate the functionally of the jamboshop application." time="9.352">
+      <testcase name="To validate the login functionally with valid crendtials" classname="To validate the functionally of the jamboshop application." time="9.352"/>
+    </testsuite>
+    <testsuite name="Feature: To validate the product search functionally of the jamboshop application." time="7.876">
+      <testcase name="To validate the search producut fuctionally with valid credentials" classname="To validate the product search functionally of the jamboshop application." time="7.876"/>
+    </testsuite>
+  </testsuite>
+</testrun>

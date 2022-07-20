@@ -1,0 +1,22 @@
+package org.stepdefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.baseclass.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.pompages.LoginPagePom;
+import io.cucumber.java.en.*;
+
+public class Loginstep extends BaseClass {
+	LoginPagePom l;
+
+	
+//		browserLaunch("chrome");
+//		urlLaunch("https://www.atmosphere.ca/");
+//		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+//		Wait(20);
+//	}
+
+	
+}

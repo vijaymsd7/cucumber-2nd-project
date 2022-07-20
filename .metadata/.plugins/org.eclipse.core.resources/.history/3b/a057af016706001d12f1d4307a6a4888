@@ -1,0 +1,16 @@
+Feature: To validate the functionally of the atmosphere application.
+
+Scenario: To validate the login functionally with valid crendtials
+
+Given The user should be in the atmosphere loginpage
+When The user should click the login 
+And The user should fill the username and password
+Then The user to click the login button
+
+
+Scenario: To validate the search producut  
+
+Given The user should be in the atmosphere product page 
+When The user should click 
+And The user should choise the degin
+Then The user to click the addcard

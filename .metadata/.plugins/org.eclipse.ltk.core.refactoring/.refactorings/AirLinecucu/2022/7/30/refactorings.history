@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;org.baseclass&apos; to &apos;Cucuber2nd_Project/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;AirLinecucu&apos;&#x0D;&#x0A;- Destination element: &apos;Cucuber2nd_Project/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;AirLinecucu/src/main/java/org.baseclass&apos;" description="Copy package" destination="=Cucuber2nd_Project/src\/main\/java" element1="/src\/main\/java&lt;org.baseclass" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1658218166071" version="1.0"/>
+</session>

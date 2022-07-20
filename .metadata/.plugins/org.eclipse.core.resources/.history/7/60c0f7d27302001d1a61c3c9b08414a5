@@ -1,0 +1,41 @@
+package org.cuc;
+
+import io.cucumber.java.en.*;
+
+public class LoginPage {
+	
+	@Given("To user should be in facebook loginpage")
+	public void to_user_should_be_in_facebook_loginpage() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("The user has to fill username and password")
+	public void the_user_has_to_fill_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("The user has to fillclick login button")
+	public void the_user_has_to_fillclick_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("the user should navigate to the invalid login page")
+	public void the_user_should_navigate_to_the_invalid_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

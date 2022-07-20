@@ -1,0 +1,74 @@
+[
+  {
+    "source": "The user should be in the atmosphere loginpage",
+    "steps": [
+      {
+        "name": "The user should be in the atmosphere loginpage",
+        "aggregatedDurations": {
+          "median": 0.0005177,
+          "average": 0.000517700
+        },
+        "durations": [
+          {
+            "duration": 0.0005177,
+            "location": "file:src/test/resources/Features/01_login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user should click the login",
+    "steps": [
+      {
+        "name": "The user should click the login",
+        "aggregatedDurations": {
+          "median": 5.1691242,
+          "average": 5.169124200
+        },
+        "durations": [
+          {
+            "duration": 5.1691242,
+            "location": "file:src/test/resources/Features/01_login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user should fill the {string} and {string}",
+    "steps": [
+      {
+        "name": "The user should fill the \"dvkme75@gmail.com\" and \"dvkme77@VIJAY\"",
+        "aggregatedDurations": {
+          "median": 1.4059503,
+          "average": 1.405950300
+        },
+        "durations": [
+          {
+            "duration": 1.4059503,
+            "location": "file:src/test/resources/Features/01_login.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "The user to click the login button",
+    "steps": [
+      {
+        "name": "The user to click the login button",
+        "aggregatedDurations": {
+          "median": 2.6275644,
+          "average": 2.627564400
+        },
+        "durations": [
+          {
+            "duration": 2.6275644,
+            "location": "file:src/test/resources/Features/01_login.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

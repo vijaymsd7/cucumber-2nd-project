@@ -1,0 +1,22 @@
+package org.stepdefinition;
+
+import org.baseclass.BaseClass;
+
+import io.cucumber.java.*;
+
+public class Hooks extends BaseClass{
+	
+	@Before
+	public void before() {
+		browserLaunch("firefox");
+		urlLaunch("https://www.atmosphere.ca/");
+		Wait(10);
+
+	}
+	@After
+	public void after() {
+		quit();
+
+	}
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (4)" project="Cucuber2nd_Project" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="org.testrunner.TestRunner" time="9.397">
+    <testsuite name="Feature: To validate the functionally of the jamboshop application." time="8.884">
+      <testcase name="To validate the login functionally with valid crendtials" classname="To validate the functionally of the jamboshop application." time="8.884"/>
+    </testsuite>
+    <testsuite name="Feature: To validate the product search functionally of the jamboshop application." time="0.513">
+      <testcase name="To validate the search producut fuctionally with valid credentials" classname="To validate the product search functionally of the jamboshop application." time="0.513">
+        <error>java.lang.NullPointerException&#13;
+	at org.stepdefinition.ProductSearchStep.the_user_should_be_in_the_jamboshop_product_page(ProductSearchStep.java:14)&#13;
+	at ✽.The user should be in the jamboshop product page(file:src/test/resources/Features/02_product.feature:7)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,40 @@
+package org.stepdefinition;
+
+import org.baseclass.BaseClass;
+import org.pompages.LoginPagePom;
+
+import io.cucumber.java.en.*;
+
+public class Loginstep extends BaseClass{
+	public LoginPagePom l;
+	@Given("The user should be in the atmosphere loginpage")
+	public void the_user_should_be_in_the_atmosphere_loginpage() {
+		browserLaunch("firefox");
+		urlLaunch("https://www.atmosphere.ca/");
+		Wait(10);
+	}
+
+	@When("The user should click the login")
+	public void the_user_should_click_the_login() {
+		l=new LoginPagePom();
+		click(l.getBtnLogin());
+		
+	}
+
+	@When("The user should fill the username and password")
+	public void the_user_should_fill_the_username_and_password() {
+		l=new LoginPagePom();
+		sendKeys(l.getName(), "dvkme75@gmail.com");
+		sendKeys(l.getPassword(), "dvkme77@VIJAY");
+	}
+
+	@Then("The user to click the login button")
+	public void the_user_to_click_the_login_button() {
+		l=new LoginPagePom();
+		click(l.getSubmit());
+		
+	}
+
+
+
+}

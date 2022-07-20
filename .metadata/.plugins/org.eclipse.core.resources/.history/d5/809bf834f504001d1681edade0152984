@@ -1,0 +1,70 @@
+package org.pompages;
+
+import org.baseclass.BaseClass;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ProductSearchPom extends BaseClass {
+	public ProductSearchPom() {
+		PageFactory.initElements(driver, this);
+	}
+
+
+	@FindBy(xpath="(//span[@class='main-menu__link-text'])[1]")
+	private WebElement btnLogin;
+
+
+	public WebElement getBtnLogin() {
+		return btnLogin;
+	}
+
+	public WebElement getBtnLogin2() {
+		return btnLogin2;
+	}
+
+	public WebElement getBtnLogin3() {
+		return btnLogin3;
+	}
+
+	public WebElement getBtnLogin4() {
+		return btnLogin4;
+	}
+
+	public WebElement getBtnLogin5() {
+		return btnLogin5;
+	}
+
+
+	@FindBy(xpath="(//img[@class='product-category-tile__img'])[2]")
+	private WebElement btnLogin2;			
+
+	@FindBy(xpath="(//img[@class='product-category-tile__img'])[4]")
+	private WebElement btnLogin3;
+
+	
+	@FindBy(xpath="(//img[@class='lazy-img product-grid-image product-grid-image_square-placeholder lazy-img_loaded'])[6]")
+	private WebElement btnLogin4;
+
+	@FindBy(xpath="(//span[@class='option-tiles__item-title'])[3]")
+	private WebElement btnLogin5;
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

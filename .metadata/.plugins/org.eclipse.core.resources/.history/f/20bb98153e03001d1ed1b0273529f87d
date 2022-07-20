@@ -1,0 +1,43 @@
+package org.cuc;
+
+import org.test.BaseClass;
+
+import io.cucumber.java.en.*;
+
+public class LoginPage extends BaseClass {
+	
+	@Given("To user should be in facebook loginpage")
+	public void to_user_should_be_in_facebook_loginpage() {
+	System.out.println("given"); 
+	browserLaunch("chrome");
+	urlLaunch("https://www.facebook.com/");
+	Wait(5);
+   
+	
+	
+	
+	
+	
+	}
+	@When("The user has to fill {string} and {string}")
+	public void the_user_has_to_fill_and(String string, String string2) {
+		System.out.println("when");  
+		
+	}
+
+	@When("The user has to fillclick login button")
+	public void the_user_has_to_fillclick_login_button() {
+		System.out.println("when22");    
+	}
+	@Then("the user should navigate to the invalid sumbit page")
+	public void the_user_should_navigate_to_the_invalid_sumbit_page() {
+		System.out.println("then22");   
+	}
+}
+
+
+
+
+
+
+   

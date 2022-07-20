@@ -1,0 +1,52 @@
+package org.stepdefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.baseclass.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.pompages.LoginPagePom;
+import io.cucumber.java.en.*;
+
+public class Loginstep extends BaseClass {
+	LoginPagePom l;
+
+	
+
+	@Given("The user should be in the jamboshop loginpage")
+	public void the_user_should_be_in_the_jamboshop_loginpage() {
+
+		browserLaunch("chrome");
+		urlLaunch("https://www.jamboshop.com/");
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		Wait(20);
+
+	}
+
+	@When("The user should click the login")
+	public void the_user_should_click_the_login() {
+		l = new  LoginPagePom();
+		//moveToElement(l.getLoginclick());
+		click(l.getSingclick());
+		click(l.getLoginclick());
+		
+	
+	}
+
+		
+		@When("The user should fill the {string} and {string}")
+	public void the_user_should_fill_the_and(String username, String password) {
+			 sendKeys(driver.findElement(By.xpath("(//input[@type='text'])[2]")), username);
+			
+			 sendKeys(driver.findElement(By.xpath("(//input[@type='password'])[1]")), password);
+				
+			
+
+	}
+
+	@Then("The user to click the login button")
+	public void the_user_to_click_the_login_button() {
+
+	}
+
+}

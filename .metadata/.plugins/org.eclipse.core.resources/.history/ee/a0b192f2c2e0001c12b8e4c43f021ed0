@@ -1,0 +1,110 @@
+package org.test;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Tnpsc {
+	public static WebDriver driver;
+
+	@BeforeClass
+	private void beforeClass() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://www.tnstc.in/home.html");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("before class");
+	}
+
+	@AfterClass
+	private void afterClass() {
+		// driver.quit();
+		System.out.println("after class");
+	}
+
+	@BeforeMethod
+	private void beforeMetod() {
+		Date d = new Date();
+		System.out.println("start time" + d);
+
+	}
+
+	@AfterMethod
+	private void afterMetod() {
+		Date d = new Date();
+		System.out.println("end time" + d);
+
+	}
+
+	@Test
+	private void test1() throws InterruptedException, AWTException {
+
+		WebElement first = driver.findElement(By.id("matchStartPlace"));
+		first.sendKeys("TRICHY");
+		WebElement droppoint = driver.findElement(By.id("matchEndPlace"));
+		droppoint.sendKeys("MADURAI");
+
+		// Robot r=new Robot();
+		// r.keyPress(KeyEvent.VK_ENTER);
+		// r.keyRelease((KeyEvent.VK_ENTER));
+		WebElement md = driver.findElement(By.xpath("//a[text()='MADURAI']"));
+		md.click();
+
+		WebElement dd = driver.findElement(By.id("txtdeptDateRtrip"));
+		dd.click();
+
+		WebElement dp = driver.findElement(By.xpath("//select[@class='ui-datepicker-month']"));
+		Select s = new Select(dp);
+		// s.selectByVisibleText("Jun");
+		dp.sendKeys("Jun");
+
+		WebElement td = driver.findElement(By.xpath("//a[text()='15']"));
+		td.click();
+
+		String attribute = dd.getAttribute("value");
+		System.out.println(attribute);
+
+		WebElement time = driver.findElement(By.id("selectOnwardTimeSlab"));
+
+		time.sendKeys("BEFORE 12 PM");
+
+		WebElement child = driver.findElement(By.id("txtAdultMales"));
+		child.sendKeys("0");
+
+		WebElement females = driver.findElement(By.id("txtAdultFemales"));
+		females.sendKeys("2");
+
+		// WebElement date = driver.findElement(By.xpath("//a[text()='31']"));
+		// date.click();
+		// date.click();
+
+		//
+		// Alert sim = driver.switchTo().alert();
+		// sim.accept();
+		// Thread.sleep(5000);
+		// String windowHandle = driver.getWindowHandle();
+		//
+		// WebElement secmethod =
+		// driver.findElement(By.xpath("(//div[@class='frontcircle new'])[2]"));
+		// secmethod.click();
+
+	}
+
+}

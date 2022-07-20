@@ -1,0 +1,7 @@
+package org.pompages;
+
+import org.baseclass.BaseClass;
+
+public class ProductSearchPom extends BaseClass {
+
+}

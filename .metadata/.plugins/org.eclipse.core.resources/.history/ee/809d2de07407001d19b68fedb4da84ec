@@ -1,0 +1,11 @@
+package org.stepdefinition;
+
+import org.baseclass.BaseClass;
+import org.pompages.ProductSearchPom;
+
+import io.cucumber.java.en.*;
+
+public class ProductSearchStep extends BaseClass {
+	ProductSearchPom p;
+
+}

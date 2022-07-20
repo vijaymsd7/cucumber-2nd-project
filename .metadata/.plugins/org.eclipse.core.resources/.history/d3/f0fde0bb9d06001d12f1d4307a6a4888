@@ -1,0 +1,28 @@
+package org.stepdefinition;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.baseclass.BaseClass;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.*;
+
+public class Hooks extends BaseClass{
+	
+	@Before
+	public void before() throws InterruptedException {
+		browserLaunch("chrome");
+		urlLaunch("https://www.atmosphere.ca/");
+		Thread.sleep(10000);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		Wait(50);
+		
+
+	}
+	@After
+	public void after(Scenario sc) throws IOException {
+		takeScreenShot(sc.getName());
+		//quit();
+
+	}
+}
